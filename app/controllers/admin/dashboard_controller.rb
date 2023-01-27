@@ -7,5 +7,7 @@ class Admin::DashboardController < ApplicationController
     @evergreens_count = Product.where(category_id: 1).count
     @shrubs_count = Product.where(category_id: 2).count
     @trees_count = Product.where(category_id: 3).count
+    @category = Category.all
+    @product = Product.all
   end
 end

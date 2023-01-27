@@ -6,29 +6,13 @@
   <thead>
     <tr>
       <th>Categories</th>
-      <th>Number of Products in Category</th>
+      <td><a href="/admin/categories"><%= @category.length %></a></td>
     </tr>
   </thead>
-
-  <tbody>
-    <tr>
-      <td>Evergreens</td>
-      <td><a href="categories/1"><%= @evergreens_count %></a></td>
-    </tr>
-    <tr>
-      <td>shrubs</td>
-      <td><a href="categories/2"><%= @shrubs_count %></a></td>
-    </tr>
-    <tr>
-      <td>Trees</td>
-      <td><a href="categories/3"><%= @trees_count %></a></td>
-    </tr>
-  </tbody>
-
   <tfoot>
     <tr>
       <th>Total number of products</th>
-      <td><a href="/admin/products"><%= @product_count %></a></td>
+      <td><a href="/admin/products"><%= @product.length %></a></td>
     </tr>
   </tfoot>
 </table>
